@@ -1,0 +1,34 @@
+import pygame
+pygame.init()
+Screen = pygame.display.set_mode((900, 600))
+Clock = pygame.time.Clock()
+Start_img = pygame.image.load('GamStuf/startbutton.png').convert_alpha()
+exit_img = pygame.image.load('GamStuf/exitbutton.png').convert_alpha()
+
+class Button():
+    def __init__(self, x, y, image, scale):
+        width = image.get_width()
+        height = image.get_height
+        self.image = image.transform.scale(image,(int(width * scale), int(height * scale)))
+        self.rect = self.image.get_rect()
+        self.rect.topleft = (x, y)
+
+
+
+    def draw(self):
+        Screen.blit(self.image,(self.rect.x, self.rect.y))
+
+Startbutton = Button(100,200,Start_img,0.5)
+ExitButton = Button(500,200,exit_img,0.5)
+while True:
+
+    Screen.fill((202,228, 241))
+    Startbutton.draw()
+    ExitButton.draw()
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+
+    pygame.display.update()
+    Clock.tick(60)
