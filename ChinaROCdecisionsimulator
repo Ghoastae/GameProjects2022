@@ -7,6 +7,7 @@ china_img = pygame.image.load('GamStuf/china.jfif')
 taiwanflagisonscreen = True
 chinaflagisonscreen = True
 actualaction = True
+cando = True
 class Button():
     def __init__(self, x, y, image, scale):
         width = image.get_width()
@@ -38,11 +39,13 @@ ChinaFlag = Button(100,200,china_img,0.8)
 TaiwanFlag = Button(700,200,taiwan_img,2.8)
 while True:
     Screen.fill((202, 228, 241))
+
     if taiwanflagisonscreen:
-        if TaiwanFlag.draw():
+        if TaiwanFlag.draw() and cando:
            print("Ass")
            chinaflagisonscreen = False
            actualaction = False
+           cando = False
 
 
 
