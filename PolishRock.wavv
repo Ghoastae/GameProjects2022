@@ -1,0 +1,48 @@
+import pygame
+pygame.init()
+Screen = pygame.display.set_mode((900, 600))
+Clock = pygame.time.Clock()
+PolishRock = pygame.image.load("GamStuf/polishrock.png")
+IndonesiaRock = pygame.image.load('GamStuf/indonesiarock.png')
+PolishRockRect = PolishRock.get_rect(center=(50,400))
+Screen1IsRunning = True
+Screen2IsRunning = False
+BaccGround = pygame.image.load('GamStuf/bacc.jfif')
+Test_Font = pygame.font.Font(None,50)
+Test_Surface = Test_Font.render('wassup indonesia',False,'green')
+while Screen1IsRunning:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+    UserInput = pygame.key.get_pressed()
+    if UserInput[pygame.K_d]:
+        PolishRockRect.x += 20
+    if UserInput[pygame.K_a]:
+        PolishRockRect.x -= 20
+        
+    if PolishRockRect.x >= 599:
+        Screen1IsRunning = False
+
+
+    if event.type == pygame.MOUSEBUTTONDOWN:
+          print(PolishRockRect.x)
+
+
+
+
+
+
+
+    Screen.blit(BaccGround,(0,0))
+    Screen.blit(PolishRock,PolishRockRect)
+    Screen.blit(Test_Surface,(300,50))
+    pygame.display.update()
+    Clock.tick(60)
+else:
+    print("ass")
+
+
+
+    pygame.display.update()
+    Clock.tick(60)
