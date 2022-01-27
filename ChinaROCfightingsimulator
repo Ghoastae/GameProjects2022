@@ -4,11 +4,13 @@ pygame.init()
 Screen = pygame.display.set_mode((900, 600))
 Clock = pygame.time.Clock()
 TaiwanFlagButton = pygame.image.load('GamStuf/taiwanflag.png')
+TaiwanFlagButtonRect = TaiwanFlagButton.get_rect(center=(200,200))
 ChinaFlagButton = pygame.image.load('GamStuf/chinaflag.png')
 CensorButton = pygame.image.load('GamStuf/censorshipfightbutton.png')
 COMMUNISTFIGHTBUTTON = pygame.image.load('GamStuf/COMMUNISTFIGHTBUTTON.png')
 FightScene = False
 ThingIsOnScreen = True
+ChinaIsOnScreen = True
 class Button():
     def __init__(self, x, y, image, scale):
         width = image.get_width()
@@ -25,20 +27,21 @@ class Button():
         action = False
         pos = pygame.mouse.get_pos()
 
-        if self.rect.collidepoint(pos):
-            if pygame.mouse.get_pressed()[0] == 1 and self.clicked == False:
-                self.clicked = True
-                action = True
-      
+        if TaiwanFlagButtonRect.collidepoint(pos):
+            print("ass")
+            Screen.blit(CensorButton,(300,0))
 
 
-        if pygame.mouse.get_pressed()[0] == 0:
-            self.clicked = False
+
+
+
+        #if pygame.mouse.get_pressed()[0] == 0:
+            #self.clicked = False
         Screen.blit(self.image,(self.rect.x, self.rect.y))
 
         return action
 
-Startbutton = Button(1,140,TaiwanFlagButton,0.8)
+#Startbutton = Button(1,140,TaiwanFlagButton,0.8)
 ExitButton = Button(440,130,ChinaFlagButton,2.8)
 #Taiwan = pygame.image.load('GamStuf/taiwanflag.png')
 #ChinaFlagButton = pygame.image.load('GamStuf/chinaflag.png')
@@ -52,14 +55,17 @@ while True:
             exit()
         if event.type == pygame.MOUSEBUTTONDOWN:  # Just for if I need to place characters or something
             print(event.pos)
+        if ChinaIsOnScreen:
+            Startbutton = Button(1, 140, TaiwanFlagButton, 0.8)
     if ThingIsOnScreen:
         Screen.blit(GamBacc, (0, 0))
 
 
 
+
     if Startbutton.draw():
-        print("START")
-        ThingIsOnScreen = False
+        print("Start")
+
     if ExitButton.draw():
         print('EXIT')
     #god i want to be railed
@@ -69,4 +75,4 @@ while True:
 
 
     Clock.tick(60)
-    pygame.display.update()
+    pygame.display.upd
