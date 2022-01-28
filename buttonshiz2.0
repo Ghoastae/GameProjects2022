@@ -1,0 +1,65 @@
+import pygame
+import time
+pygame.init()
+Screen = pygame.display.set_mode((900, 600))
+Clock = pygame.time.Clock()
+TaiwanFlagButton = pygame.image.load('GamStuf/TaiFlag.png')
+Active = True
+class Button():
+    def __init__(self, x, y, image, scale):
+        width = image.get_width()
+        height = image.get_height
+        self.image = image
+        self.rect = self.image.get_rect()
+        self.rect.topleft = (x, y)
+        self.clicked = False
+
+
+
+
+    def draw(self):
+        action = False
+        pos = pygame.mouse.get_pos()
+
+
+        if self.rect.collidepoint(pos):
+            action = True
+            if action:
+                Active = False
+
+
+
+
+
+        if pygame.mouse.get_pressed()[0] == 0:
+            self.clicked = False
+        Screen.blit(self.image,(self.rect.x, self.rect.y))
+
+        return action
+TaiwanFlagButton2 = Button(100,140,TaiwanFlagButton,0.8)
+
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+    if Active:
+
+        if TaiwanFlagButton2.draw():
+            Active = False
+
+
+
+
+    else:
+        print("ass")
+        Screen.fill('yellow')
+
+
+
+
+
+#else:
+    #Screen.fill('yellow')
+    Clock.tick(60)
+    pygame.display.update()
