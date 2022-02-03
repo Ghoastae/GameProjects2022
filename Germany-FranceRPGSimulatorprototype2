@@ -13,6 +13,11 @@ FrancoBall = pygame.image.load('GamStuf/FrancoBall.png')
 FrancoBallRect = FrancoBall.get_rect(center=(200,200))
 GermanyBall = pygame.image.load('GamStuf/GermanyBall.png')
 GermanyBallRect = GermanyBall.get_rect(center=(200,200))
+GermanyTextStuff = pygame.font.Font(None,52)
+GermanyTextStuff2 = GermanyTextStuff.render('polen',False,'green')
+Polen = pygame.image.load('GamStuf/Polen.png')
+BritishFlag = pygame.image.load('GamStuf/BritishFlag.png')
+
 class Button():
     def __init__(self, x, y, image, scale):
         width = image.get_width()
@@ -50,15 +55,20 @@ FranceButton2 = Button(-140,140,FranceButton,0.8)
 
 while True:
     for event in pygame.event.get():
+
+
         if event.type == pygame.QUIT:
+
             pygame.quit()
             exit()
 
+#ayo to future aidan whos working on this game rn you left off at making the frencg button
 
-    UserInput = pygame.key.get_pressed()
+
 
 
         if GameActive:
+            #UserInput = pygame.key.get_pressed()
             Screen.fill('blue')
             if GermanyFlagButton.draw():
                 # Active = False
@@ -69,20 +79,42 @@ while True:
                 GameActive = False
                 FranceActive = True
 
-        if FranceActive:
-            print("surrender in every world war")
-            Screen.fill('white')
-        if GermanyActive:
+    if FranceActive:
+        UserInput = pygame.key.get_pressed()
+        print("surrender in every world war")
+        Screen.blit(FrenchVaporwave,(0,0))
+        Screen.blit(FrancoBall,FrancoBallRect)
 
-            print("Sasuage,beer,leaderhosen,pretzels")
-            Screen.blit(GermanVaporwave,(0,0))
-            Screen.blit(GermanyBall,GermanyBallRect)
-            if UserInput[pygame.K_d]:
-                GermanyBallRect.x += 20
-            if UserInput[pygame.K_a]:
-                GermanyBallRect.x -= 20
+        if UserInput[pygame.K_d]:
+            FrancoBallRect.x += 20
+        if UserInput[pygame.K_a]:
+            FrancoBallRect.x -= 20
+
+
+
+
+    if GermanyActive:
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            print(event.pos)
+
+
+        UserInput = pygame.key.get_pressed()
+
+        #print("Sasuage,beer,leaderhosen,pretzels")
+        Screen.blit(GermanVaporwave, (0, 0))
+        Screen.blit(GermanyBall, GermanyBallRect)
+        Screen.blit(Polen,(200,-100))
+        if GermanyBallRect.x >= 234:
+            Screen.blit(GermanyTextStuff2,(400,100))
+            print("ass")
+
+        if UserInput[pygame.K_d]:
+            GermanyBallRect.x += 20
+        if UserInput[pygame.K_a]:
+            GermanyBallRect.x -= 20
 
 
 
     Clock.tick(60)
     pygame.display.update()
+
