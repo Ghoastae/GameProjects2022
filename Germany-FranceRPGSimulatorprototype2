@@ -15,9 +15,14 @@ GermanyBall = pygame.image.load('GamStuf/GermanyBall.png')
 GermanyBallRect = GermanyBall.get_rect(center=(200,200))
 GermanyTextStuff = pygame.font.Font(None,52)
 GermanyTextStuff2 = GermanyTextStuff.render('polen',False,'green')
+BritishFlagText = pygame.font.Font(None,52)
+BritishFlagText2 = BritishFlagText.render('U surrender in every world war lol',False,'red')
 Polen = pygame.image.load('GamStuf/Polen.png')
 BritishFlag = pygame.image.load('GamStuf/BritishFlag.png')
-
+FrancoBallText = False
+FrancoBallText20 = pygame.font.Font(None,52)
+FrancoBall30 = FrancoBallText20.render('stfu bro your empire fell',False,'blue')
+BritishFlagIsOn = True
 class Button():
     def __init__(self, x, y, image, scale):
         width = image.get_width()
@@ -62,7 +67,7 @@ while True:
             pygame.quit()
             exit()
 
-#ayo to future aidan whos working on this game rn you left off at making the frencg button
+#ayo to future aidan whos working on this game rn you left off at making the french button
 
 
 
@@ -80,10 +85,21 @@ while True:
                 FranceActive = True
 
     if FranceActive:
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            print(event.pos)
+
         UserInput = pygame.key.get_pressed()
-        print("surrender in every world war")
+        #print("surrender in every world war")
         Screen.blit(FrenchVaporwave,(0,0))
         Screen.blit(FrancoBall,FrancoBallRect)
+        Screen.blit(BritishFlag,(300,-100))
+        if FrancoBallRect.x >= 231:
+            FrancoBallText = True
+            Screen.blit(BritishFlagText2,(300,0))
+
+        if FrancoBallRect.x  >= 231 and FrancoBallText == True:
+            Screen.blit(FrancoBall30, (200, 0))
+
 
         if UserInput[pygame.K_d]:
             FrancoBallRect.x += 20
@@ -115,6 +131,5 @@ while True:
 
 
 
-    Clock.tick(60)
+    Clock.tick(70)
     pygame.display.update()
-
