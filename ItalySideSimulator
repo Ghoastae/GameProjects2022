@@ -1,0 +1,67 @@
+
+import pygame
+
+pygame.init()
+Screen = pygame.display.set_mode((900, 600))
+Clock = pygame.time.Clock()
+ItalyBall = pygame.image.load('GamStuf/ItalyBall.png')
+ItalyBallRect = ItalyBall.get_rect(center=(100,200))
+RedSide = pygame.image.load('GamStuf/RedSide.png')
+BlueSide = pygame.image.load('GamStuf/BlueSide.png')
+BlueSideActive = True
+RedSideActive = True
+VaporwaveBacc = pygame.image.load('GamStuf/VaporwaveBacc.jfif')
+Userinput = pygame.key.get_pressed()
+Active = True
+class Button():
+    def __init__(self, x, y, image, scale):
+        width = image.get_width()
+        height = image.get_height
+        self.image = image
+        self.rect = self.image.get_rect()
+        self.rect.topleft = (x, y)
+        self.clicked = False
+
+
+
+
+    def draw(self):
+        action = False
+        pos = pygame.mouse.get_pos()
+
+        if self.rect.collidepoint(pos):
+            if pygame.mouse.get_pressed()[0] == 1 and self.clicked == False:
+                self.clicked = True
+                action = True
+
+        if pygame.mouse.get_pressed()[0] == 0:
+            self.clicked = False
+        Screen.blit(self.image,(self.rect.x, self.rect.y))
+
+        return action
+
+RedSide1 = Button(-300,100,RedSide,0.8)
+BlueSide2 = Button(200,100,BlueSide,2.8)
+while Active:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+    Userinput = pygame.key.get_pressed()
+    Screen.blit(VaporwaveBacc, (0, 0))
+    Screen.blit(ItalyBall, ItalyBallRect)
+    if Userinput[pygame.K_a]:
+        ItalyBallRect.x -= 20
+
+    if Userinput[pygame.K_d]:
+        ItalyBallRect.x += 20
+
+    if BlueSideActive:
+        if BlueSide2.draw():
+            print("yessir")
+    if RedSideActive:
+        if RedSide1.draw():
+            print("bruh u dum")
+
+    Clock.tick(60)
+    pygame.display.update()
