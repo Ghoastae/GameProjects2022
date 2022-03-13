@@ -1,0 +1,56 @@
+import time
+
+import pygame
+pygame.init()
+Screen = pygame.display.set_mode((900, 600))
+Clock = pygame.time.Clock()
+ScreenIsRunning = True
+DartIsOnScreen = False
+EventAlwaysTrue = False
+DartCube = pygame.image.load('GamStuf/DartCube.png')
+EnemyCube = pygame.image.load('GamStuf/EnemyCube.png')
+MainCube = pygame.image.load('GamStuf/MainCube.png')
+Vaporwave = pygame.image.load('GamStuf/VaporwaveBacc.jpg')
+MainCubeRect = MainCube.get_rect(center=(400,600))
+DartCubeRect = DartCube.get_rect(center=(340,-150))
+EnemyCubeRect = EnemyCube.get_rect(center=(400,100))
+
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+        UserInput = pygame.key.get_pressed()
+    if ScreenIsRunning:
+        Screen.blit(Vaporwave,(0,0))
+        Screen.blit(MainCube,MainCubeRect)
+        Screen.blit(EnemyCube,EnemyCubeRect)
+        if UserInput[pygame.K_d]:
+            MainCubeRect.x += 20
+        if UserInput[pygame.K_a]:
+            MainCubeRect.x -= 20
+
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            DartIsOnScreen = True
+
+        if DartIsOnScreen:
+
+            Screen.blit(DartCube,DartCubeRect)
+            DartCubeRect.y -= 10
+
+        if DartCubeRect.y <= -35:
+
+            print("ass")
+            DartIsOnScreen = False
+            DartCubeRect.x = 340
+            DartCubeRect.y = 450
+        if DartCubeRect.colliderect(EnemyCubeRect):
+            EventAlwaysTrue = True
+
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            print(event.pos)
+        if EventAlwaysTrue:
+            Screen.fill('yellow')
+
+    pygame.display.update()
+    Clock.tick(60)
