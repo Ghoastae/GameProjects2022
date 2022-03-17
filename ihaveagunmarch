@@ -1,0 +1,47 @@
+import pygame
+import time
+pygame.init()
+Screen = pygame.display.set_mode((900, 600))
+Clock = pygame.time.Clock()
+ScreenIsRunning = True
+KuomSolder= pygame.image.load('gamStuf/KuomSolder.png')
+KuomSolderRect = KuomSolder.get_rect(center=(200,400))
+VaporwaveBacc = pygame.image.load('gamStuf/VaporwaveBacc.jpg')
+Bullet = pygame.image.load('gamStuf/Bullet.png')
+BulletRect = Bullet.get_rect(center=(400,600))
+BulletCanGo = False
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+        UserInput = pygame.key.get_pressed()
+    if ScreenIsRunning:
+
+       Screen.blit(VaporwaveBacc,(0,0))
+       Screen.blit(KuomSolder,KuomSolderRect)
+       if UserInput[pygame.K_d]:
+           KuomSolderRect.x += 20
+       if UserInput[pygame.K_a]:
+           KuomSolderRect.x -= 20
+       if event.type == pygame.MOUSEBUTTONDOWN:
+           BulletCanGo = True
+
+
+       if BulletCanGo == True:
+           #print("adad")
+           Screen.blit(Bullet,BulletRect)
+           BulletRect.y -= 10
+
+       if BulletRect.y <=-35:
+           #print("ass")
+           BulletCanGo = False
+           BulletRect.x = 400
+           BulletRect.y = 600
+
+
+       if event.type == pygame.MOUSEBUTTONDOWN:
+           print(event.pos)
+
+    pygame.display.update()
+    Clock.tick(60)
