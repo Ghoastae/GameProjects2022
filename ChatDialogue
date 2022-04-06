@@ -1,0 +1,4 @@
+have the character walk up to someone(colliderect)
+have it display some text(have some variable to make sure the text is on the screen)
+if the player holds their mouse down then the text will go away permanently 
+and replace it with a new text
