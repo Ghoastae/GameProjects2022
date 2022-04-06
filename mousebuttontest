@@ -1,0 +1,19 @@
+import pygame
+pygame.init()
+Screen = pygame.display.set_mode((900, 600))
+Clock = pygame.time.Clock()
+Vaporwave = pygame.image.load('GamStuf/Vaporwave.jpg')
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            Screen.blit(Vaporwave,(200,100))
+
+
+
+
+
+    pygame.display.update()
+    Clock.tick(60)
