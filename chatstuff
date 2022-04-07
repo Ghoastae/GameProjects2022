@@ -1,0 +1,48 @@
+import pygame
+pygame.init()
+Screen = pygame.display.set_mode((900, 600))
+Clock = pygame.time.Clock()
+Vaporwave = pygame.image.load('GamStuf/Vaporwave.jpg')
+RedCube = pygame.image.load('GamStuf/RedCube.png')
+RedCubeRect = RedCube.get_rect(center=(200,500))
+
+PurpleCube = pygame.image.load('GamStuf/PurpleBoi.png')
+PurpleCubeRect = PurpleCube.get_rect(center=(700,450))
+HiText = pygame.image.load('GamStuf/Hi.png')
+WassupText = pygame.image.load('GamStuf/Wassup.png')
+CanMove = True
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+    UserInput = pygame.key.get_pressed()
+    Screen.blit(Vaporwave, (0, 0))
+
+    Screen.blit(RedCube, RedCubeRect)
+    Screen.blit(PurpleCube, PurpleCubeRect)
+    if CanMove:
+        if UserInput[pygame.K_d]:
+            RedCubeRect.x += 20
+        if UserInput[pygame.K_a]:
+            RedCubeRect.x -= 20
+
+
+    if RedCubeRect.colliderect(PurpleCubeRect):
+        CanMove = False
+        if pygame.MOUSEBUTTONDOWN:
+            if pygame.MOUSEBUTTONDOWN:
+                print("Asdas")
+
+
+        #if event.type == pygame.MOUSEBUTTONDOWN:
+            #if pygame.MOUSEBUTTONDOWN:
+                #print("aads")
+
+
+
+
+
+
+    pygame.display.update()
+    Clock.tick(60)
