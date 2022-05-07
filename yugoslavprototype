@@ -1,0 +1,53 @@
+import time
+
+import pygame
+pygame.init()
+Screen = pygame.display.set_mode((1155,470))
+Clock = pygame.time.Clock()
+Intro = True
+GameIsBeginning = False
+Yugoslaviaww1Era = False
+Yugoslavww1ThingStarts = False
+ThEndOfWw2Text = pygame.image.load('GamStuf/the_end_ofww1text.png')
+MouseButton = False
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+        if event.type == pygame.MOUSEBUTTONDOWN:
+
+            #print("Ass")
+    UserInput = pygame.key.get_pressed()
+        #UserInput = pygame.key.get_pressed()
+    if Intro:
+        Screen.fill('Black')
+        if MouseButton:
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                GameIsBeginning = True
+                Intro = False
+                MouseButton = False
+                time.sleep(5)
+                MouseButton = True
+
+
+        if GameIsBeginning == True:
+            Screen.blit(ThEndOfWw2Text, (0, 0))
+        if MouseButton == True:
+            print("ass")
+
+
+
+        #if event.type == pygame.MOUSEBUTTONDOWN:
+            #if event.key == pygame.K_SPACE:
+                #Screen.fill('yellow')
+                #MouseButton = True
+
+        if MouseButton:
+            if event.type == pygame.KEYDOWN:
+                Yugoslaviaww1Era = True
+    if Yugoslaviaww1Era:
+
+        Screen.fill('purple')
+    pygame.display.update()
+    Clock.tick(60)
