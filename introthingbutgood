@@ -1,0 +1,38 @@
+import pygame
+pygame.init()
+Screen = pygame.display.set_mode((990, 700))
+Clock = pygame.time.Clock()
+Intro1 = True
+Intro2 = False
+Intro3 = False
+MouseButton = False
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+        Keys = pygame.key.get_pressed()
+        if Intro1:
+            Screen.fill('Yellow')
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                Intro2 = True
+                Intro1 = False
+        if Intro2:
+
+            Screen.fill('blue')
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    #print("Ass")
+                    Intro3 = True
+                    Intro2 = False
+
+        if pygame.K_SPACE and Intro3:
+            print("Ass")
+            MouseButton = True
+
+        if Intro3 and MouseButton:
+            Screen.fill('green')
+
+    pygame.display.update()
+    Clock.tick(60)
+
