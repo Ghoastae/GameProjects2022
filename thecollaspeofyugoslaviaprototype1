@@ -1,0 +1,41 @@
+import pygame
+pygame.init()
+Screen = pygame.display.set_mode((1159, 471))
+Screen2 = pygame.display.set_mode((1200,600))
+Clock = pygame.time.Clock()
+PressAnyButtonFont = pygame.font.Font(None,42)
+PressAnyButtonToBegin = PressAnyButtonFont.render('Press Any Button To Begin',False,'Black')
+EndOfWW1Text_Text = pygame.image.load('GamStuff/the_end_ofww1text.png')
+YugoSlavicRepublic = pygame.image.load('GamStuff/KingdomOfYugoslavia.png')
+EndOfWW1Text = True
+YugoslavEndOfWW1 = False
+BeforeWw2 = False
+CanShowCity = False
+Character_Player = pygame.image.load('GamStuff/Character(Player).png')
+Character_PlayerRect = Character_Player.get_rect(center=(100,400))
+GuyWhoCreatesYugoslavia = pygame.image.load('GamStuff/GuyWhoCreatesYugoslavia.png')
+CityPhotos = pygame.image.load('GamStuff/City_photos_v2_faces_x4_light_ai.jpg')
+UserInput = pygame.key.get_pressed()
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+        #UserInput = pygame.key.get_pressed()
+        if EndOfWW1Text:
+            Screen.blit(EndOfWW1Text_Text,(0,0))
+            Screen.blit(PressAnyButtonToBegin,(400,400))
+            if event.type == pygame.KEYDOWN:
+                if pygame.K_SPACE:
+                    EndOfWW1Text = False
+                    YugoslavEndOfWW1 = True
+        if YugoslavEndOfWW1:
+            if UserInput[pygame.K_d]:
+                Character_PlayerRect.x += 20
+            if UserInput[pygame.K_a]:
+                Character_PlayerRect.x -= 20
+            Screen2.blit(CityPhotos,(0,0))
+            Screen2.blit(Character_Player, Character_PlayerRect)
+
+    pygame.display.update()
+    Clock.tick(60)
