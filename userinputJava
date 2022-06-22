@@ -1,0 +1,22 @@
+package newprojectakaSTANTWITTER;
+import java.util.Scanner;
+public class QuandeleDinglus {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner =  new Scanner(System.in);
+		System.out.print("How long yo penis");
+		String Long = scanner.nextLine();
+		
+		System.out.print("hello "+Long);
+				
+	
+		 
+	
+
+		
+	
+
+	}
+
+}
