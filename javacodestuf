@@ -1,0 +1,1 @@
+package JavaGui; import javax.swing.*; public class javagui { public static void main(String[] args) { int age = Integer.parseInt(JOptionPane.showInputDialog("Your Age Is?")); if (age > 12) { JOptionPane.showMessageDialog(null,"You're old"); } if (age < 12) { JOptionPane.showMessageDialog(null,"Your Young"); } //JOptionPane.showMessageDialog(null,"Your age is "+ age); } }
