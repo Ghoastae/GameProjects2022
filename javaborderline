@@ -1,0 +1,42 @@
+package javagui;
+import javax.swing.JLabel;
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.border.Border;
+import javax.swing.BorderFactory;
+
+import javax.swing.*;
+import javax.swing.JFrame;
+public class javagui {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ImageIcon image = new ImageIcon("wolf.png");
+		Border border = BorderFactory.createLineBorder(Color.green,3);
+	    JLabel label = new JLabel();
+	    label.setText("Wassuup btoskie daad");
+	    label.setIcon(image);
+	    label.setForeground(new Color(0,170,255));
+	    label.setHorizontalTextPosition(JLabel.LEFT);
+	    label.setVerticalTextPosition(JLabel.TOP);
+	    label.setBackground(Color.gray);
+	    label.setOpaque(true);
+	    label.setBorder(border);
+	    label.setBounds(110, 110, 350, 350);
+	    
+	    
+		JFrame frame = new JFrame();
+		frame.setTitle("JFrame here");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//frame.setSize(520, 520);
+		frame.setVisible(true);
+		frame.add(label);
+		frame.pack();
+		
+		
+		//ImageIcon image = new ImageIcon("anime.png");
+		//frame.setIconImage(image.getImage())
+	}
+
+}
