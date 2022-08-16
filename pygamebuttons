@@ -1,0 +1,38 @@
+import pygame
+import button
+
+pygame.init()
+Screen = pygame.display.set_mode((900, 600))
+Clock = pygame.time.Clock()
+MercyButton = pygame.image.load('MercyButton.png')
+FightButton = pygame.image.load('FightButton.png')
+
+class Button():
+    def __innit__(self, x, y,image):
+        self.image = image
+        self.rect = self.image.get_rect()
+        self.rect.topleft = (x, y)
+
+    def draw(self):
+        action = False
+        Screen.blit(self.image, (self.rect.x, self.rect.y))
+
+
+
+
+
+
+Mercy_Button = Button(100, 200, MercyButton)
+Fight_Button = Button(100, 200, FightButton)
+
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+        Screen.fill((202,228,241))
+
+        Mercy_Button.draw()
+
+    pygame.display.update()
+    Clock.tick(60)
