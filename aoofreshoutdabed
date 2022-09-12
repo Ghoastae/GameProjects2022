@@ -1,0 +1,29 @@
+#from ClassCharacter import Character
+import pygame
+pygame.init()
+
+class Character:
+    def __init__(self,charac):
+        self.charac = charac
+    def talk(self):
+        print("Hey")
+
+Screen = pygame.display.set_mode((990, 700))
+Clock = pygame.time.Clock()
+RedMan = pygame.image.load('RedMan.png')
+RedManRect = RedMan.get_rect(center=(200,200))
+Bacc = pygame.image.load('screen01_loop_bg.png')
+RedMaan = Character(RedManRect)
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+        UserInput = pygame.key.get_pressed()
+        Screen.blit(Bacc,(0,0))
+
+        RedMaan.talk()
+
+
+    Clock.tick(60)
+    pygame.display.update()
