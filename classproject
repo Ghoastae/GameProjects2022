@@ -1,0 +1,62 @@
+import pygame
+pygame.init()
+Screen = pygame.display.set_mode((990, 700))
+Clock = pygame.time.Clock()
+Koolaida = pygame.image.load('Koolaida.png')
+BoxerGuy = pygame.image.load('BoxerGuy.png')
+Bacc = pygame.image.load('R.jpg')
+PunchButton = pygame.image.load('Punch.png')
+class Button():
+    def __init__(self, x, y, image, scale):
+        width = image.get_width()
+        height = image.get_height
+        self.image = image
+        self.rect = self.image.get_rect()
+        self.rect.topleft = (x, y)
+        self.clicked = False
+
+
+
+
+    def draw(self):
+        action = False
+        pos = pygame.mouse.get_pos()
+
+        if self.rect.collidepoint(pos):
+            if pygame.mouse.get_pressed()[0] == 1 and self.clicked == False:
+                self.clicked = True
+                action = True
+
+        if pygame.mouse.get_pressed()[0] == 0:
+            self.clicked = False
+        Screen.blit(self.image,(self.rect.x, self.rect.y))
+
+        return action
+
+class Character:
+    def __init__(self,character,PunchButton,Mana):
+        self.charac = character
+        self.PunchButton = PunchButton
+        self.mana = Mana
+    def talk(self):
+        print("Hey")
+BoxGuy = Character(pygame.image.load('BoxerGuy.png'),None,6)
+Startbutton = Button(100,200,PunchButton,0.8)
+while True:
+    for event in pygame.event.get():
+
+
+        if event.type == pygame.QUIT:
+
+            pygame.quit()
+            exit()
+        Screen.blit(Bacc,(0,0))
+        #BoxGuy.talk()
+        if Startbutton.draw():
+            BoxGuy.talk()
+        Screen.blit(Koolaida,(-400,200))
+        Screen.blit(BoxerGuy,(400,200))
+
+
+    Clock.tick(60)
+    pygame.display.update()
