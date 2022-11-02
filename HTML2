@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dave Gray">
+    <link rel="icon" href="F_F.png" type="image/x-icon">
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>My Goals for the Year</h1>
+
+    <hr>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#Coochie">Learning How to get coochie</a>
+            </li>
+            <li>
+                <a href="#Spongeboob">Planning a Spongeboob</a>
+            </li>
+        </ul>
+    </nav>
+
+    <hr>
+
+
+
+
+
+
+    <section id="Booty">
+        <h1>The daily schedule</h1>
+        <p>Get booty</p>
+        
+        <h2>Get looty</h2>
+        <p>Fortnite battle pass :)</p>
+        <ol>
+            <li>Ayo</li>
+            <li>Booty</li>
+            <li>...I use resources from <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/">MDN</a>
+            </abbr>.</li>
+            
+        </ol>
+
+    </section>
+    <hr>
+
+    <section id="Loot">
+        <h1>Why I like booty</h1>
+        <p>Girls</p>
+        <p>Boys</p>
+
+        <ol>
+            <li>Crittiden</li>
+            <li>Magma</li>
+            <li>Resources from <abbr title="booty"><a href="https://developer.mozilla.org/">Lootybooty</a>
+                </abbr>.</li>
+        </ol>
+
+    </section>
+    <hr>
+
+    <section id="Coochie">
+        <h1>Why I like coochiey</h1>
+        <p>Minecraft</p>
+        <p>MidBaah</p>
+
+        <ol>
+            <li>Booty from girls</li>
+            <li>Booty from R kelly</li>
+            <li>Even booty from yo mama</li>
+            
+        </ol>
+
+    </section>
+    <hr>
+
+    <section id="Spongeboob">
+        <h1>Why I like spongeboob</h1>
+        <p>Sandy Cheeks</p>
+        <p>;)</p>
+
+        <ol>
+            <li>Booty from girls</li>
+            <li>Booty from R sandy</li>
+            <li>Even booty from patrick</li>
+            
+        </ol>
+
+    </section>
+    <a href="#">Back to Top</a>
+
+    
+    
+
+</body>
