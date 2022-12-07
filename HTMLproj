@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    font-style: italic;    
+    font-size: 58px;
+    font-family: "Zen Dots";
+    text-decoration:  blue dotted underline;
+    font-weight: lighter
+    
+    
+}
+
+
+
+p{
+    color: green;    
+    
+    font-weight: bold;
+    
+    
+}
+#P1{
+   
+
+}
