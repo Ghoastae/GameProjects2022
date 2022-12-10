@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dave Gray">
+    <link rel="icon" href="F_F.png" type="image/x-icon">
+    <title>My First Web Page</title>
+    <link rel="Stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>My Goals for the Year</h1>
+    <p id="box1">Booty and why I like<br> IT,<br> its booty who doesnt like it lol<br>
+    Tank foosh sogeking</p>
+    
+    <img class="kobeniii">
+   
+    
+
+
+    
+
+</body>
+--------------------------------
+body{
+  
+  background-color: black;
+  background-image: url("Visiting-New-Jersey-1440x960.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1{
+    color: white;
+   
+    
+}
+
+p{
+    
+  
+}
+
+#box1{
+    border: 4px solid;
+    width: 250px;
+    height: 290px;
+    text-decoration: dotted underline;
+    font-size: 24x;
+    background-color: darkcyan;
+    
+
+}
