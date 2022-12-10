@@ -1,0 +1,27 @@
+body{
+    background-image: url("Visiting-New-Jersey-1440x960.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    background-size: cover;
+}
+
+h1{
+    color: white;
+   
+    
+}
+
+p{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background: linear-gradient(to right, orange,blue)
+    
+  
+}
+.kobeniii{
+    width: 300px;
+    height: 300px;
+    
+}
