@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dave Gray">
+    <link rel="icon" href="F_F.png" type="image/x-icon">
+    <title>My First Web Page</title>
+    <link rel="Stylesheet" href="Style.css">
+</head>
+<body>
+   <div class="Booty">Box1</div>
+   <div class="Booty">Box2</div>
+   <div class="Booty">Box3</div>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam minima, vero fuga blanditiis, qui accusantium quidem aspernatur ex porro debitis aperiam accusamus voluptatibus provident illo labore corporis? Neque, et?</p>
+   
+</body>
+    
+   ----------------------------------------------
+   body{
+  
+    background-color: black;
+    background-image: url("Visiting-New-Jersey-1440x960.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  h1{
+      color: white;
+     
+      
+  }
+  
+  p{
+
+    clear: left;
+      
+    
+  }
+ 
+  
+  .Booty{
+    border:4px solid;
+    width: 145px;
+    height: 145px;
+    background-color: yellow;
+    font-size: 55px;
+    float: left;
+
+  }
+ 
+
+  
