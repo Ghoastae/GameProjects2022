@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dave Gray">
+    <link rel="icon" href="F_F.png" type="image/x-icon">
+    <title>My First Web Page</title>
+    <link rel="Stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>My Goals for the Year</h1>
+    
+    <p id="box1"> Why I like sogeking<br>Hes cool<br>
+        Hes funny<br>AND HES A SNIPER<br>Whats not to like 
+        <br>
+    
+    
+    </p>
+    <p id ="box2">
+        Why I like zoro<br>Hes cool<br>
+        Hes black<br>AND HES A MINORTIY HUNTER<br>Whats not to like 
+        <br>
+        
+
+
+    </p>
+    <p id ="box3">
+        Why I like sanji<br>Hes cool<br>
+        Hes simp<br>AND HES A  HUNTER<br>Whats not to like 
+        <br>
+        
+
+
+    </p>
+    
+    -------------------------------------
+    body{
+  
+    background-color: black;
+    background-image: url("Visiting-New-Jersey-1440x960.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  h1{
+      color: white;
+     
+      
+  }
+  
+  p{
+      
+    
+  }
+  p{
+
+  }
+  
+  #box1{
+    border: 4px solid;
+    width: 175px;
+    height: 175px;
+    text-decoration: dotted underline;
+    font-size: 21px;
+    background-color: darkcyan;
+    margin-top: auto;
+
+  }
+  #box2{
+    border: 4px solid;
+    width: 175px;
+    height: 175px;
+    text-decoration: dotted underline;
+    font-size: 21px;
+    background-color: lightpink;
+
+    margin-top: auto;
+    margin-top: -38px;
+  }
+  #box3{
+    border: 4px solid;
+    width: 175px;
+    height: 175px;
+    text-decoration: dotted underline;
+    font-size: 21px;
+    background-color: palegreen;
+
+    margin-left: auto;
+    margin-top: -36px;
+  }
