@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dave Gray">
+    <link rel="icon" href="F_F.png" type="image/x-icon">
+    <title>My First Web Page</title>
+    <link rel="Stylesheet" href="Style.css">
+</head>
+<body>
+   <div class="Booty">Box1</div>
+   <div class="Booty">Box2</div>
+   <div class="Booty">Box3</div>
+   <img class="image" src="kobeni.jpg"> 
+   <img class="image" src="koben.jpg"> 
+  
+
+
+
+</body>
+    
+    --------------------------------
+    body{
+  
+    background-color: black;
+    background-image: url("Visiting-New-Jersey-1440x960.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  h1{
+      color: white;
+     
+      
+  }
+  
+  p{
+
+    clear: left;
+    
+      
+    
+  }
+ 
+  
+  .image{
+    position: sticky;
+    float: left;
+    width: 300px;
+    height: 300px;
+
+  }
+ 
+
+  
