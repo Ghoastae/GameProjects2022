@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dave Gray">
+    <link rel="icon" href="F_F.png" type="image/x-icon">
+    <title>My First Web Page</title>
+    <link rel="Stylesheet" href="Style.css">
+</head>
+<body>
+   <div class="Booty">Box1</div>
+   <div class="Booty">Box2</div>
+   <div class="Booty">Box3</div>
+    
+   <div id="Box1">
+    <div id="Box2">Booty</div>
+
+
+   </div>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa impedit! Eum, autem. Cum, nobis possimus. Veniam reprehenderit praesentium error nulla! Eum minima omnis labore, cum adipisci consequatur magnam sequi!</p>
+   
+</body>
+    ------------------------------------------
+    body{
+  
+    background-color: black;
+    background-image: url("Visiting-New-Jersey-1440x960.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  h1{
+      color: white;
+     
+      
+  }
+  
+  p{
+
+
+  }
+  #Box1{
+    border: 4px solid;
+    width: 175px;
+    height: 175px;
+    background-color: purple;
+    position: sticky;
+    top: 50px;
+
+
+  }
+  #Box2{
+    border: 1px solid;
+    width: 75px;
+    height: 75px;
+    background-color: olivedrab;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+  
+  }
