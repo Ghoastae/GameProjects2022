@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dave Gray">
+    <link rel="icon" href="F_F.png" type="image/x-icon">
+    <title>My First Web Page</title>
+    <link rel="Stylesheet" href="Style.css">
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="grid-item item-1">
+            Item 1
+        </div>
+        <div class="grid-item item-2">
+            Item 2
+        </div>
+        <div class="grid-item item-3">
+            Item 3
+        </div>
+        <div class="grid-item item-4">
+            Item 4
+        </div>
+     
+
+    </div>
+    
+   
+
+   
+   
+</body>
+    -----------------------------------
+    body{
+  
+    background-color: black;
+    background-image: url("Visiting-New-Jersey-1440x960.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  h1{
+      color: white;
+     
+      
+  }
+  
+  p{
+
+
+  }
+
+.grid-container{
+  height:320px;
+  border: 8px purple solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-item{
+  background-color: blueviolet;
+  border: 3px solid orange;
+  padding: 20px;
+
+
+}
+  
